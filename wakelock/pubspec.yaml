@@ -6,26 +6,32 @@ version: 0.6.2
 repository: https://github.com/creativecreatorormaybenot/wakelock/tree/main/wakelock
 
 environment:
-  sdk: '>=2.12.0 <3.0.0'
-  flutter: '>=2.0.0'
+  sdk: ^2.18.6
 
 dependencies:
   flutter:
     sdk: flutter
 
-  meta: ^1.2.0
+  meta: 1.9.1
+  device_info_plus: ^9.0.3
+  wakelock_macos:
+    path: ../wakelock_macos
 
-  wakelock_macos: ^0.4.0
-  wakelock_platform_interface: ^0.3.0
-  wakelock_web: ^0.4.0
-  wakelock_windows: ^0.2.0
+  wakelock_platform_interface:
+    path: ../wakelock_platform_interface
+
+  wakelock_web:
+    path: ../wakelock_web
+
+  wakelock_windows:
+    path: ../wakelock_windows
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
 
   flutter_lints: ^1.0.4
-  pigeon: ^1.0.2 # flutter pub run pigeon --input "pigeons/messages.dart"
+  pigeon: ^12.0.0 # flutter pub run pigeon --input "pigeons/messages.dart"
 
 flutter:
   plugin:

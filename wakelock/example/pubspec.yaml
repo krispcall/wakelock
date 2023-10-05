@@ -9,12 +9,12 @@ environment:
   # Opt out of null safety on purpose because dependencies do not support sound null safety yet
   # and flutter drive ignores the --no-sound-null-safety parameter.
   # todo(creativecreatorormaybenot): switch to 2.12.0-0 lower bound.
-  sdk: '>=2.11.0 <3.0.0'
+  sdk: ^2.18.6
 
 dependencies:
   flutter:
     sdk: flutter
-
+  device_info_plus: ^9.0.3
   wakelock:
     # When depending on this package from a real application you should use:
     #   wakelock: ^x.y.z
