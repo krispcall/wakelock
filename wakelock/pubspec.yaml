@@ -15,7 +15,10 @@ dependencies:
   meta: 1.9.1
   device_info_plus: ^9.0.3
   wakelock_macos:
-    path: ../wakelock_macos
+    git:
+      url: https://github.com/krispcall/wakelock.git
+      ref: main
+      path: wakelock_macos
 
   wakelock_platform_interface:
     path: ../wakelock_platform_interface
